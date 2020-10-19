@@ -10,5 +10,9 @@ class ApplicationController < Sinatra::Base
   get '/' do
     "Welcome to Fwitter"
   end
+  
+  get '/users/create_user' do
+    erb :'users/create_user'
+  end
 
 end
